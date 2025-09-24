@@ -1,0 +1,11 @@
+age,gender,blood_pressure,cholesterol,glucose,heart_rate,bmi,condition
+45,Male,120,180,95,72,24.5,Normal
+67,Female,140,220,110,80,28.3,Hypertension
+34,Male,110,190,88,68,22.1,Normal
+56,Female,130,240,105,76,26.8,Diabetes
+29,Male,125,170,92,70,23.4,Normal
+72,Female,150,260,115,82,30.2,Hypertension
+41,Male,118,195,98,74,25.6,Pre-diabetes
+63,Female,135,230,108,78,27.9,Diabetes
+38,Male,122,185,94,71,24.8,Normal
+59,Female,142,250,112,79,29.1,Hypertension

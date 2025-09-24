@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard - MedReport Analyzer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-links">
+                <div class="top-bar-search" id="topBarSearch">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Search..." class="search-input" />
+                </div>
+                <div class="top-bar-login">
+                    <button class="top-bar-btn top-bar-outline" id="profileBtn">
+                        <i class="fas fa-user"></i> Profile
+                    </button>
+                    <button class="top-bar-btn top-bar-primary" id="logoutBtn">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-text">MedReport Analyzer</div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#analysis" class="active">Report Analysis</a>
+                <a href="#history">History</a>
+                <a href="profile.html">Profile</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dashboard Welcome -->
+    <section class="dashboard-welcome">
+        <div class="container">
+            <h1 id="userWelcome">Welcome back!</h1>
+            <p>Analyze your medical reports and track your health journey</p>
+        </div>
+    </section>
+
+    <!-- Report Analysis Section -->
+    <section id="analysis" class="analysis-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Analyze Medical Report</h2>
+                <p>Enter your medical test results for AI-powered analysis</p>
+            </div>
+            
+            <div class="analysis-container">
+                <div class="report-form">
+                    <h3>Enter Test Results</h3>
+                    <form id="analysisForm">
+                        <div class="form-group">
+                            <label for="reportName">Report Name</label>
+                            <input type="text" id="reportName" required placeholder="e.g., Blood Test Report">
+                        </div>
+                        
+                        <div class="test-inputs">
+                            <div class="test-input-group">
+                                <label>Test Type</label>
+                                <input type="text" class="test-type" placeholder="e.g., Glucose">
+                            </div>
+                            <div class="test-input-group">
+                                <label>Value</label>
+                                <input type="text" class="test-value" placeholder="e.g., 95">
+                            </div>
+                            <button type="button" class="btn btn-outline add-test-btn">
+                                <i class="fas fa-plus"></i> Add Test
+                            </button>
+                        </div>
+                        
+                        <div id="testResults" class="test-results-list">
+                            <!-- Dynamic test results will be added here -->
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-chart-line"></i> Analyze Report
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="analysis-result" id="analysisResult" style="display: none;">
+                    <h3>Analysis Results</h3>
+                    <div class="result-card">
+                        <div class="result-header">
+                            <h4 id="resultCondition">Condition</h4>
+                            <span class="confidence-badge" id="resultConfidence">95%</span>
+                        </div>
+                        <div class="result-content">
+                            <h5>Analysis:</h5>
+                            <p id="resultAnalysis">Analysis details will appear here...</p>
+                            <h5>Recommendations:</h5>
+                            <p id="resultRecommendations">Recommendations will appear here...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Report History Section -->
+    <section id="history" class="history-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Report History</h2>
+                <p>Your previous medical report analyses</p>
+            </div>
+            
+            <div class="history-container">
+                <div id="historyList" class="history-list">
+                    <!-- History items will be loaded dynamically -->
+                    <div class="loading">Loading your report history...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

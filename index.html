@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MedReport Analyzer | AI-Powered Health Insights</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-links">
+                <div class="top-bar-search" id="topBarSearch">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Search..." class="search-input" />
+                </div>
+                <div class="top-bar-login">
+                    <button class="top-bar-btn top-bar-primary" onclick="window.location.href='login.html'">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-text">MedReport Analyzer</div>
+            </div>
+            <nav class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#upload">Reports</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-center">
+            <h1>AI-Powered Medical Report Analysis</h1>
+            <p>
+                Upload your medical test reports and get clear, actionable
+                insights with our advanced AI technology
+            </p>
+            <button class="btn btn-primary" onclick="window.location.href='login.html'">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>
+                    We provide comprehensive analysis of your medical reports
+                    with easy-to-understand insights
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3>Report Analysis</h3>
+                    <p>
+                        AI-powered analysis of your medical reports with clear
+                        explanations of complex terms
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Health Monitoring</h3>
+                    <p>
+                        Track your health metrics over time and identify trends
+                        that need attention
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Doctor Consultation</h3>
+                    <p>
+                        Share your reports with healthcare professionals for
+                        expert advice
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload-section" id="upload">
+        <div class="container">
+            <div class="section-title">
+                <h2>Upload Your Medical Report</h2>
+                <p>Get started with AI-powered analysis of your medical reports</p>
+            </div>
+            <div class="upload-container">
+                <div class="upload-area" onclick="window.location.href='login.html'">
+                    <div class="upload-icon">
+                        <i class="fas fa-file-upload"></i>
+                    </div>
+                    <div class="upload-text">
+                        <h3>Click to Get Started</h3>
+                        <p>Login to analyze your medical reports</p>
+                    </div>
+                    <button class="btn btn-primary">Login to Analyze</button>
+                </div>
+                <p class="upload-note">
+                    Your data is encrypted and secure. We comply with medical
+                    data protection regulations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>MedReport Analyzer</h4>
+                    <p>
+                        Making medical reports understandable for everyone
+                        through AI-powered analysis.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#upload">Reports</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 MedReport Analyzer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
